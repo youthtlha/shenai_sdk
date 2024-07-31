@@ -1,0 +1,27 @@
+name: shenai_sdk
+description: Flutter plugin for shen.ai SDK
+version: 2.3.7
+homepage: developer.shen.ai
+
+publish_to: "none"
+
+environment:
+  sdk: '>=2.19.0 <3.0.0'
+  flutter: ">=2.5.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_plugin_android_lifecycle: ^2.0.0
+
+dev_dependencies:
+  pigeon: ^11.0.1
+
+flutter:
+  plugin:
+    platforms:
+      android:
+        package: ai.mxlabs.shenai_sdk_flutter
+        pluginClass: ShenaiSdkPlugin
+      ios:
+        pluginClass: ShenaiSdkPlugin
